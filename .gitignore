@@ -160,3 +160,14 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+
+##Also ignore the csv files, the output.txt file, the simulation timing.yaml file which is being made
+# Ignore all .csv files
+*.csv
+
+# Ignore output.txt
+output.txt
+
+# Ignore simulation timing.yaml file (specific name match)
+simulation_timing.yaml

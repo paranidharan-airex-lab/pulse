@@ -111,8 +111,8 @@ conda activate pulse_env
 2. Install core dependencies:
 
 ```bash
-conda install numpy scipy pandas streamlit pyyaml h5py plotly 
-conda install -c conda-forge pint 
+conda install numpy scipy pandas streamlit pyyaml h5py plotly
+conda install -c conda-forge pint
 ```
 
 3. Install in development mode:
@@ -209,7 +209,6 @@ pytest tests/
 - [x] Improved Visualization using plotly
 - [x] Support for HDF5 data format
 - [x] Doppler Shift & Enhanced Frequency Measurement using FFT Interpolation
-
 
 ## Upcoming Features
 
