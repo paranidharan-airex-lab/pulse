@@ -7,15 +7,14 @@ edit_uri: edit/main/docs/
 nav:
   - Home: index.md
   - Installation Guide: installation_guide.md
-  - Contribution: contribution.md
   - Testing: testing.md
   - API Reference:
-      - Data Exporter: docs/api/data_exporter.md
+      - Data Exporter: api/data_export.md
       - Radar Properties: api/radar_properties.md
       - Main: api/main.md
       - Model: api/model.md
       - Hardware opt: api/hardware_opt.md
-  - Upcoming Features: upcoming_features.md
+
 theme:
   name: material
   features:
@@ -40,3 +39,17 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_root_heading: true
+            show_root_toc_entry: true
+            rendering:
+              show_signature_annotations: true
+          setup_commands:
+            - "import sys; sys.path.insert(0, 'src')"  # Add src to Python path
+
